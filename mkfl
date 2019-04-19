@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: wtorwold <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/15 18:02:21 by wtorwold          #+#    #+#              #
+#    Updated: 2019/03/22 18:30:13 by wtorwold         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+all:
+	gcc -Wall -Wextra -Werror libft/ft_strjoin.c libft/ft_strnew.c libft/ft_memalloc.c libft/ft_bzero.c libft/ft_strlen.c libft/ft_strsub.c get_next_line.c gnlmain.c
+clean:
+	/bin/rm -f *.o
+
+fclean:
+	/bin/rm -f a.out
